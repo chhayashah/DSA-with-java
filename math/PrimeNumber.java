@@ -8,11 +8,17 @@ public class PrimeNumber {
     }
 
     public static boolean isPrimeOrNot(int num) {
-        for (int i = 2; i <= num - 1; i++) {
-            if (num % i == 0) {
+        // optimise solution
+        for(int i=2;i*i<=num;i++){
+            if(num%i==0){
                 return false;
             }
         }
+        // for (int i = 2; i <= num - 1; i++) {
+        //     if (num % i == 0) {
+        //         return false;
+        //     }
+        // }
         return true;
     }
 }

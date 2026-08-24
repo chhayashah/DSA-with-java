@@ -1,3 +1,4 @@
+
 public class StudentClass {
 
     public static class Student {
@@ -21,5 +22,8 @@ public class StudentClass {
         System.out.println(y.name);
         System.out.println(y.rno);
         System.out.println(y.percent);
+
+        y.name = "manoj";
+        System.out.println(y.name);
     }
 }

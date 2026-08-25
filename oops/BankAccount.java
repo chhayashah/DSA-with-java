@@ -26,7 +26,9 @@ public class BankAccount {
         return balance;
     }
     public void setBalance(int balance){
-        this.balance=balance;
+        if (balance >= 0) {
+            this.balance = balance;
+        }
     }
     public static void main(String[] args){
         BankAccount ba = new BankAccount(101, "chhaya", 60000);

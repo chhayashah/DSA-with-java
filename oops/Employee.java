@@ -18,6 +18,10 @@ public class Employee {
     public int calculateAnnualSalary() {
         return salary * 12;
     }
+
+    public int calculateBonus(int percentage) {
+        return salary * percentage / 100;
+    }
     
     public static void main(String[] args) {
 
@@ -26,11 +30,13 @@ public class Employee {
 
         e1.displayDetails();
         System.out.println("Annual salary: " + e1.calculateAnnualSalary());
+        System.out.println(e1.calculateBonus(10));
 
         Employee e2 = new Employee("kiran", 102, 45000);
         // System.out.println(e2.name + " " + e2.id + " " + e2.salary);
 
         e2.displayDetails();
         System.out.println("Annual salary: " + e2.calculateAnnualSalary());
+        System.out.println(e2.calculateBonus(20));
     }
 }

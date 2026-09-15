@@ -1,7 +1,7 @@
 public class Palindrome{
     public static void main(String[] args) {
 
-        String str = "madam";
+        // String str = "madam";
         // String ch = "";
         // for (int i = str.length() - 1; i >= 0; i--) {
         //  ch=ch+str.charAt(i);
@@ -12,25 +12,29 @@ public class Palindrome{
         //     System.out.println("not Palindrome");
         // }
 
-        int left = 0;
-        int right = str.length() - 1;
+        // int left = 0;
+        // int right = str.length() - 1;
 
-        boolean isPalindrome = true;
-        while (left < right) {
-            if (str.charAt(left) != str.charAt(right)){
-                isPalindrome = false;
-                break;
-            }
-            left++;
-            right--;
-        }
+        // boolean isPalindrome = true;
+        // while (left < right) {
+        //     if (str.charAt(left) != str.charAt(right)){
+        //         isPalindrome = false;
+        //         break;
+        //     }
+        //     left++;
+        //     right--;
+        // }
 
-        if (isPalindrome) {
-            System.out.println("Palindrome");
-        } else {
-            System.out.println("Not Palindrome");
+        // if (isPalindrome) {
+        //     System.out.println("Palindrome");
+        // } else {
+        //     System.out.println("Not Palindrome");
+        // }
+
+        String str = "programming";
+        for (int i = 0; i < str.length() ; i++) {
+            System.out.println(str.charAt(i));
         }
-   
-   
+    
     }
 }
